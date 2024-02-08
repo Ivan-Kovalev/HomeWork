@@ -1,5 +1,7 @@
 package homework_method_objects;
 
+import java.util.Objects;
+
 public class Book {
 
     private String name;
@@ -34,14 +36,16 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        Book b2 = (Book) obj;
-        return name.equals(b2.name);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(name, book.name) && Objects.equals(author, book.author);
     }
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(name);
+        return Objects.hash(name, author);
     }
 
 }

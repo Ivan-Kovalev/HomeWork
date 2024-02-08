@@ -14,7 +14,7 @@ public class Main {
         System.out.println(greenBook);
 
         if (blueBook.equals(greenBook)) {
-            System.out.println("\nНазвания книг одинаковые");
+            System.out.println("\nЭто одна и та же книга");
         }
 
         if (john.equals(diana)) {
