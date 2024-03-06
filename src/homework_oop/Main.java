@@ -1,4 +1,4 @@
-package homework_OOP;
+package homework_oop;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,9 +34,13 @@ public class Main {
         printStudent.print(ravenclaw);
 
         CompareStudent compareStudent = new CompareStudent();
-        compareStudent.compare(gryffindor);
-        compareStudent.compare(slytherin);
-        compareStudent.compare(hufflepuff);
-        compareStudent.compare(ravenclaw);
+        compareStudent.compare(gryffindor[0], gryffindor[1]);
+        compareStudent.compare(slytherin[0], slytherin[1]);
+        compareStudent.compare(hufflepuff[0], hufflepuff[1]);
+        compareStudent.compare(ravenclaw[0], ravenclaw[1]);
+
+        System.out.println();
+
+        compareStudent.compareAnyStudents(gryffindor[0], hufflepuff[1]);
     }
 }

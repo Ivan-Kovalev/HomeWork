@@ -1,4 +1,4 @@
-package homework_OOP;
+package homework_oop;
 
 public class Gryffindor extends Hogwarts {
     private int nobility;

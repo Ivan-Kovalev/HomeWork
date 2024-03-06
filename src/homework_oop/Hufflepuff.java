@@ -1,4 +1,4 @@
-package homework_OOP;
+package homework_oop;
 
 public class Hufflepuff extends Hogwarts {
     private int hardWork;

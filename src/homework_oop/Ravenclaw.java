@@ -1,4 +1,4 @@
-package homework_OOP;
+package homework_oop;
 
 public class Ravenclaw extends Hogwarts{
     private int intelligence;
