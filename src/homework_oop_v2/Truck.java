@@ -6,15 +6,15 @@ public class Truck extends Transport implements Serviceable {
         super(modelName, wheelsCount);
     }
 
-    @Override
-    public void service(Transport truck) {
-        if (truck != null) {
-            System.out.println("Обслуживаем " + truck.getModelName());
-            for (int i = 0; i < truck.getWheelsCount(); i++) {
+    public void service() {
+        if (this != null) {
+            System.out.println("Обслуживаем " + this.getModelName());
+            for (int i = 0; i < this.getWheelsCount(); i++) {
                 System.out.println("Меняем покрышку");
             }
             System.out.println("Проверяем двигатель");
             System.out.println("Проверяем прицеп");
         }
     }
+
 }

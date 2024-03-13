@@ -6,13 +6,13 @@ public class Bicycle extends Transport implements Serviceable {
         super(modelName, wheelsCount);
     }
 
-    @Override
-    public void service(Transport bicycle) {
-        if (bicycle != null) {
-            System.out.println("Обслуживаем " + bicycle.getModelName());
-            for (int i = 0; i < bicycle.getWheelsCount(); i++) {
+    public void service() {
+        if (this != null) {
+            System.out.println("Обслуживаем " + this.getModelName());
+            for (int i = 0; i < this.getWheelsCount(); i++) {
                 System.out.println("Меняем покрышку");
             }
         }
     }
+
 }
